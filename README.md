@@ -10,7 +10,7 @@ sudo apt-get install git -y
 ## How to use
 ```
 git clone https://github.com/LucasMedeiros-dev/Yolo_installer
-cd yolo_installer
+cd Yolo_installer
 chmod +x install_yolo.sh
 source ./install_yolo.sh
 ```
