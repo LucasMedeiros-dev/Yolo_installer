@@ -14,6 +14,7 @@ cd yolo_installer
 chmod +x install_yolo.sh
 source ./install_yolo.sh
 ```
+When prompted about use of graphics card type only "y" or "n", otherwise the script will default to cpu only mode.
 # Tested plataforms
 ```
 debian 11
