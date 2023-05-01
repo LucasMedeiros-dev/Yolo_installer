@@ -12,8 +12,9 @@ sudo apt-get install git -y
 git clone github.com/LucasMedeiros-dev/Yolo_installer
 cd Yolo_installer
 chmod +x install_yolo.sh
-source ./install_tesseract.sh
+source ./install_yolo.sh
 ```
+Quando for questionado sobre o uso de placa de vídeo digite apenas "y" ou "n" para aceitar ou negar. qualquer outra coisa resultará em uso de apenas cpu.
 # Plataformas testadas
 ```
 debian 11
