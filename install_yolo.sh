@@ -2,7 +2,7 @@
 
 mkdir logs
 
-apt install python3 python3-pip
+apt install python3 python3-pip -y
 
 echo "Installing requirements may take a while" # Install all the dependencies for training and using yolo
 y | pip install ultralytics labelImg simple_image_download | tee logs/pip_install.log
