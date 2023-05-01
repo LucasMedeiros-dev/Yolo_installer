@@ -13,19 +13,21 @@ Link for anaconda: https://www.anaconda.com/download/
 git clone https://github.com/LucasMedeiros-dev/Yolo_installer
 cd Yolo_installer
 chmod +x install_requirements.sh
+chmod +x create_env.sh
 chmod +x install_yolo.sh
-./install_requirements.sh # After this is script you'll be logged out and will need to log in again.
+source ./install_requirements.sh # After this is script you'll be logged out and will need to log in again.
+source ./create_env.sh
 conda activate yolo # Do this after you login or else yolo will not work.
-./install_yolo.sh 
+source ./install_yolo.sh 
 ```
 When prompted about use of graphics card type only "y" or "n", otherwise the script will default to cpu only mode.
 ## Post-install
 ### Useful commands.
-```
+```bash
 conda activate yolo
 ```
 ### How to deactivate 
-```
+```bash
 conda deactivate
 ```
 # Tested plataforms
@@ -36,7 +38,7 @@ Python3 = 3.9.2
 ```
 # Notes
 If you are having a hard time using it with sudo, try using sudo -i then execute the file.
-```
+```bash
 sudo -i 
 ./install_yolo.sh
 ```
