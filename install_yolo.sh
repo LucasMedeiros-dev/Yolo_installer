@@ -1,14 +1,12 @@
 #!/bin/bash
 
-mkdir logs
+chmod +x create_env.sh
+y | ./create_env.sh
 
-apt-get install python3 python3-venv python3-pip -y # Install all the needed dependencies
+echo "IMPORTANT: Please make sure you have run 'conda activate yolo' before this script else it will fail"
+echo "Wait 10S to proceed or CTRL+C to cancel."
 
-chmod +x activate.sh # Marks the activate script as executable
-chmod +x deactivate.sh # Marks the deactivate script as executable
-
-python3.9 -m venv yolo | tee logs/create_venv.log # Create a virtual enviroment where the files will be installed
-source ./yolo/bin/activate | tee logs/activate_venv.log # Activate this virtual env
+sleep 10
 
 echo "Installing requirements may take a while" # Install all the dependencies for training and using yolo
 yes | pip install python-magic simple_image_download labelImg ultralytics | tee logs/pip_install.log
@@ -31,12 +29,11 @@ fi
 
 echo "Downloading small model."
 wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8s.pt | tee logs/yolov8sdownload.log
-
 clear
 echo
-echo "If you wish to deactivate or activate this virtual env later"
-echo "To deactivate your yolo venv use source deactivate.sh"
-echo "To activate your yolo venv use source activate.sh"
+echo "To activate to use yolo do: conda activate yolo"
+echo
+echo "To deactivate to use yolo do: conda deactivate"
 echo
 echo "You're all set."
 echo "Made with love by Lucas Medeiros"

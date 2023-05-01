@@ -1,1 +1,1 @@
-source ./yolo/bin/activate
+conda activate yolo

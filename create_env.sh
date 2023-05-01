@@ -1,0 +1,1 @@
+y | conda create -n yolo python=3.9 | tee logs/create_venv.log # Create a virtual enviroment where the files will be installed
