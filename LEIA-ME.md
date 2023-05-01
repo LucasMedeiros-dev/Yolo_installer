@@ -12,18 +12,10 @@ sudo apt-get install git -y
 git clone github.com/LucasMedeiros-dev/Yolo_installer
 cd Yolo_installer
 chmod +x install_yolo.sh
-source ./install_yolo.sh
+./install_yolo.sh
 ```
 Quando for questionado sobre o uso de placa de vídeo digite apenas "y" ou "n" para aceitar ou negar. qualquer outra coisa resultará em uso de apenas cpu.
-## Após a instalação
-### Lembre-se de ativar o venv antes de usar.
-```
-source activate.sh
-```
-### Como desativar o venv.
-```
-source deactivate.sh
-```
+
 # Plataformas testadas
 ```
 debian 11
@@ -34,7 +26,7 @@ Python3 = 3.9.2
 Se houver algum problema com relação a permissões de usuário tente usar sudo -i e depois executar o arquivo.
 ```
 sudo -i 
-source ./install_yolo.sh
+./install_yolo.sh
 ```
 Sintam-se livres para enviar perguntas e sugestões de melhorias na aba de issues.
 
