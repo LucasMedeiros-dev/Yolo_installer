@@ -15,6 +15,15 @@ chmod +x install_yolo.sh
 source ./install_yolo.sh
 ```
 When prompted about use of graphics card type only "y" or "n", otherwise the script will default to cpu only mode.
+## Post-install
+### Remember to activate the env after installation.
+```
+source activate.sh
+```
+### How to deactivate 
+```
+source deactivate.sh
+```
 # Tested plataforms
 ```
 debian 11
