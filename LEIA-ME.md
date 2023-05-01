@@ -15,6 +15,15 @@ chmod +x install_yolo.sh
 source ./install_yolo.sh
 ```
 Quando for questionado sobre o uso de placa de vídeo digite apenas "y" ou "n" para aceitar ou negar. qualquer outra coisa resultará em uso de apenas cpu.
+## Após a instalação
+### Lembre-se de ativar o venv antes de usar.
+```
+source activate.sh
+```
+### Como desativar o venv.
+```
+source deactivate.sh
+```
 # Plataformas testadas
 ```
 debian 11
