@@ -2,11 +2,12 @@
 ## A brief description
 A simple script to install yolov8 small model and all it's dependencies.
 ## Requirements
-You will need git installed to run the script.
+You will need git and conda installed to run the script.
 Instructions below:
 ```
 sudo apt-get install git -y
 ```
+Link for anaconda: https://www.anaconda.com/download/
 ## How to use
 ```
 git clone https://github.com/LucasMedeiros-dev/Yolo_installer
