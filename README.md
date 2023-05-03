@@ -7,7 +7,6 @@ Instructions below:
 ```
 sudo apt-get install git -y
 ```
-Link for anaconda: https://www.anaconda.com/download/
 ## How to use
 ```bash
 git clone https://github.com/LucasMedeiros-dev/Yolo_installer
